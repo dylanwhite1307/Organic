@@ -102,6 +102,10 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 /* HEADER **********************************************************************************/
 .header-body {
   display: -webkit-box;
@@ -259,13 +263,14 @@ h1, h2, h3, h4, h5, h6 {
 
   .header-nav-menu {
     flex-direction: column;
+    text-align: center;
   }
   .header-nav-menu li,
 .header-nav-menu .header-nav-menu__link {
     font-size: 30px;
   }
   .header-nav-menu li {
-    margin: 0 65px 20px 0;
+    margin: 0 0px 20px 0;
   }
   .header-nav-menu li:nth-child(1):after, .header-nav-menu li:nth-child(2):after, .header-nav-menu li:nth-child(3):after {
     content: "";
@@ -311,7 +316,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg__item {
-  background: url(../img/top.png) -40px 0/cover no-repeat;
+  background: url(../img/top.png) 0px 0/cover no-repeat;
   width: 100%;
   padding-bottom: 61%;
   position: absolute;
@@ -523,11 +528,14 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.75vw;
   border-right: 0.0625vw solid #eaeaea;
   padding-right: 2.75vw;
+  margin-top: 2vw;
 }
 
 .content-quote-text {
   width: 16.5625vw;
+  height: 15.625vw;
   margin-bottom: 4.3125vw;
+  overflow: auto;
 }
 .content-quote-text p span {
   display: inline-block;
@@ -545,6 +553,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 3vw;
   position: relative;
   top: 0.625vw;
+}
+.text__quotes:before {
+  content: "“";
 }
 
 .content-quote-slider {
@@ -597,6 +608,9 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 28px;
   }
 
+  .content-quote-text {
+    height: 250px;
+  }
   .content-quote-text p span:after {
     font-size: 48px;
   }
@@ -691,6 +705,10 @@ h1, h2, h3, h4, h5, h6 {
   .content-text {
     flex: 60%;
   }
+
+  .content-quote-text {
+    height: 350px;
+  }
 }
 @media (max-width: 600px) {
   .content {
@@ -715,6 +733,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .content-quote-text {
     margin-bottom: 50px;
+    height: 120px;
   }
 
   .content-quote-slider__item {
@@ -735,6 +754,11 @@ h1, h2, h3, h4, h5, h6 {
   }
   .content-quote-slider__item:last-child {
     margin: 0px;
+  }
+}
+@media (max-width: 450px) {
+  .content-quote-text {
+    height: 200px;
   }
 }
 /* FOOTER **********************************************************************************/

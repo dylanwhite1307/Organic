@@ -39,12 +39,10 @@
 }
 .wrapper {
   overflow: hidden;
-  
 }
-a:hover{
+a:hover {
   text-decoration: underline;
 }
-
 
 /* HEADER **********************************************************************************/
 
@@ -191,7 +189,7 @@ a:hover{
   .header-nav-menu {
     flex-direction: column;
     text-align: center;
-    
+
     li,
     .header-nav-menu__link {
       font-size: 30px;
@@ -457,7 +455,6 @@ a:hover{
   border-right: 0.0625vw solid #eaeaea;
   padding-right: 2.75vw;
   margin-top: 2vw;
-  
 }
 .content-quote-text {
   width: 16.5625vw;
@@ -477,13 +474,39 @@ a:hover{
     }
   }
 }
+
+.content-quote-text::-webkit-scrollbar {
+  width: 5px;
+}
+.content-quote-text::-webkit-scrollbar-button {
+  background-color: #fff;
+}
+.content-quote-text::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+.content-quote-text::-webkit-scrollbar-track-piece {
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+.content-quote-text::-webkit-scrollbar-thumb {
+  background-color: #fe992a;
+  border-radius: 5px;
+}
+.content-quote-text::-webkit-scrollbar-corner {
+  background-color: #999;
+}
+.content-quote-text::-webkit-resizer {
+  background-color: #666;
+}
+
 .text__quotes {
   color: #fe992a;
   font-size: 3vw;
   position: relative;
   top: 0.625vw;
-  &:before{
-    content: '\201C';
+  &:before {
+    content: "\201C";
   }
 }
 .content-quote-slider {
@@ -637,7 +660,7 @@ a:hover{
   .content-text {
     flex: 60%;
   }
-  .content-quote-text{
+  .content-quote-text {
     height: 350px;
   }
 }
@@ -678,7 +701,7 @@ a:hover{
     }
   }
 }
-@media (max-width: 450px){
+@media (max-width: 450px) {
   .content-quote-text {
     height: 200px;
   }
@@ -809,7 +832,7 @@ a:hover{
     transform: rotate(40deg);
   }
 }
-@media (max-width: 750px){
+@media (max-width: 750px) {
   .footer {
     padding: 3.125vw 0 0 0vw;
     overflow: auto;
@@ -824,13 +847,13 @@ a:hover{
     padding: 0 0vw 0 0;
   }
 }
-@media (max-width: 600px){
-  .footer{
+@media (max-width: 600px) {
+  .footer {
     margin: 0 0 0 0;
     padding: 0px 0 40px 0;
     height: auto;
   }
-  .footer-body{
+  .footer-body {
     flex-direction: column-reverse;
     align-items: center;
     a,
@@ -839,7 +862,7 @@ a:hover{
       line-height: 40px;
     }
   }
-  .contacts{
+  .contacts {
     text-align: center;
     margin: 0 auto;
     margin-top: 40px;
@@ -847,17 +870,17 @@ a:hover{
     width: 100%;
     word-break: break-all;
   }
-  .sections{
+  .sections {
     padding: 0 0 0 0;
     width: 100%;
   }
-  .sections-item{
+  .sections-item {
     padding: 0;
     text-align: center;
     border-bottom: 1px solid #fff;
   }
-  
-  h3.sections__title{
+
+  h3.sections__title {
     padding: 5px 0px;
     font-size: 35px;
     &:before,
@@ -876,7 +899,7 @@ a:hover{
       left: 24px;
     }
   }
-  .sections__list{
+  .sections__list {
     background: #ce6a67;
   }
 }

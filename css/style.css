@@ -548,6 +548,37 @@ a:hover {
   top: 2.8125vw;
 }
 
+.content-quote-text::-webkit-scrollbar {
+  width: 5px;
+}
+
+.content-quote-text::-webkit-scrollbar-button {
+  background-color: #fff;
+}
+
+.content-quote-text::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+.content-quote-text::-webkit-scrollbar-track-piece {
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.content-quote-text::-webkit-scrollbar-thumb {
+  background-color: #fe992a;
+  border-radius: 5px;
+}
+
+.content-quote-text::-webkit-scrollbar-corner {
+  background-color: #999;
+}
+
+.content-quote-text::-webkit-resizer {
+  background-color: #666;
+}
+
 .text__quotes {
   color: #fe992a;
   font-size: 3vw;

@@ -460,7 +460,7 @@ a:hover {
   width: 16.5625vw;
   height: 15.625vw;
   margin-bottom: 4.3125vw;
-  overflow: auto;
+  overflow: hidden;
   p {
     span {
       display: inline-block;
@@ -474,7 +474,9 @@ a:hover {
     }
   }
 }
-
+.content-quote-text:hover{
+  overflow: auto;
+}
 .content-quote-text::-webkit-scrollbar {
   width: 5px;
 }
